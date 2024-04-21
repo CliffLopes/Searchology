@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchology</title>
+    <body style="background-color:rgb(208, 234, 238);"></body>
+    <link rel="stylesheet" href="popup_script.css" type="text/css">  
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <style>
+       
+        h1{
+            font-family:"Menlo", monospace;
+            font-size: 22px;
+            font-weight: 400px;
+            margin:0;
+            color : #04345c;
+        }
+        
+       
+        </style>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <p><img src="images/Searchology.png" alt="Searchology"  class="center"/><div> 
+                Searchology
+              </div></p>
+            </h1>
+        </div>
+        <div class="modal-content">
+            <p>Your fingertip dictionary</p>
+        </div>
+    <div class="container">
+        <div class="section1">
+            <select name="search_engine" id="search_engine">
+                <option value="" disabled selected>Choose a search engine</option>
+                <option value="google">Google</option>
+                <option value="startpage">Start Page</option>
+                <option value="duckduckgo">Duck Duck Go</option>
+                <option value="ecoasia">Ecoasia</option>
+                <option value="bing">Bing</option>
+                <option value="dictionary">Dictionary</option>
+                <option value="translate">Translate</option>
+                <option value="login" >Login</option>
+            </select>
+            <button>Select</button>
+            <button>Close</button>
+            <!-- <a href='https://www.google.com/search?q=news&rlz=1C1CHBF_enIN998IN998&oq=news&aqs=chrome.0.69i59j0i67l3j69i60l4.1646j0j7&sourceid=chrome&ie=UTF-8'><button>Login</button></a> -->
+            <a href="http://google.com" target="_blank" >Google</a>
+        
+        </div>
+        <div class="section2">
+            <div class="search_engine_choice">Your Current Search Engine</div>
+        </div>
+    </div>
+    <script src="./scripts/popup_script.js"></script>
+</body>
+
+</html>
